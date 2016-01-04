@@ -1,0 +1,170 @@
+\newcounter{xp}
+\newcounter{ecl}
+\newcounter{age}
+\newcounter{totalhp}
+\newcounter{currenthp}
+\newcounter{str}
+\newcounter{dex}
+\newcounter{con}
+\newcounter{int}
+\newcounter{wis}
+\newcounter{cha}
+\newcounter{strmod}
+\newcounter{dexmod}
+\newcounter{conmod}
+\newcounter{intmod}
+\newcounter{wismod}
+\newcounter{chamod}
+\newcounter{sizemod}
+\newcounter{initmod}
+\newcounter{initmisc} %misc initiative modifier
+\newcounter{ac}
+\newcounter{touchac}
+\newcounter{flatfootedac}
+\newcounter{acarmour}
+\newcounter{acshield}
+\newcounter{acdex}
+\newcounter{acsize}
+\newcounter{acnatural}
+\newcounter{acdeflect}
+\newcounter{acmisc}
+\newcounter{acmaxdex}
+\newcounter{fort}
+\newcounter{reflex}
+\newcounter{will}
+\newcounter{basefort}
+\newcounter{baseref}
+\newcounter{basewill}
+\newcounter{resistancesave}
+\newcounter{magicfort}
+\newcounter{magicref}
+\newcounter{magicwill}
+\newcounter{fortmisc}
+\newcounter{refmisc}
+\newcounter{willmisc}
+\newcounter{cmb}
+\newcounter{cmd}
+\newcounter{cmbmisc}
+\newcounter{cmdmisc}
+\newcounter{bab}
+\newcounter{spellresistance}
+\newcounter{lightload}
+\newcounter{medload}
+\newcounter{heavyload}
+\newcounter{money}
+\newcounter{casterlevel}
+
+\newcommand{\charname}{Nezzelech Reborn}
+\newcommand{\charrace}{Gnome}
+\newcommand{\charclass}{Cleric of Sarenrae 5/Dawnflower Dissident 5}
+\newcommand{\charalignment}{NG}
+\newcommand{\charsex}{Male}
+\newcommand{\charsize}{Medium}
+\setcounter{sizemod}{0}
+\newcommand{\chartype}{Humanoid (Gnome)}
+\newcommand{\charheight}{2'11``}
+\newcommand{\charweight}{15.42kg/38lb}
+\newcommand{\charhair}{Cyan}
+\newcommand{\chareyes}{Orange}
+\setcounter{age}{35}
+
+\setcounter{xp}{0}
+\setcounter{ecl}{1}
+
+\setcounter{totalhp}{75}
+\setcounter{currenthp}{75}
+\newcommand{\speed}{20', 4sq (medium armour)}
+
+\setcounter{str}{7} %  -1
+\setcounter{dex}{20} % 10 +2 curse, +1 4th, +1 8th
+\setcounter{con}{14} % 2
+\setcounter{int}{12} % 2
+\setcounter{wis}{15} % 5 +1
+\setcounter{cha}{14} % 2
+
+
+\setcounter{acnatural}{0}
+\setcounter{acarmour}{6}
+\setcounter{acdeflect}{1}
+\setcounter{acmaxdex}{6} %maximum dexterity modifier armour allows. Use a high number for none
+
+\setcounter{basefort}{5}
+\setcounter{baseref}{3}
+\setcounter{basewill}{6}
+\setcounter{resistancesave}{0}
+\setcounter{bab}{7}
+\setcounter{spellresistance}{0}
+
+\setcounter{cmdmisc}{\value{acdeflect}}
+
+\newcommand{\feats}{
+ Weapon Finesse, Dervish Dance, Piranna Strike, Toughness, Eschew Materials, 
+}
+
+\newcommand{\traits}{
+Warded against Witchery, Blade of Mercy\\
+}
+\newcommand{\specialabilities}{
+Low-light vision, 1/day dancing lights, 1/day ghost sound,
+1/day prestigitiation, 1/day speak with animals \\
+1/day reroll natural 1 on 1d20 \\
+Channel energy 3d6 5/day, Good Aura (strong), 5/day Fire bolt (1d6+2), channel energy (heal or command Cold Subtype 3d6) 5/day, Secret Caster, Burning blade (swift action to spend channel to give scimitar Flaming for 3 rounds)
+}
+
+\newcommand{\conditionalmods}{
++2 Vs Enchantment\\
+}
+\newcommand{\languages}{
+Common, Sylvan, Gnome, Celestial \\
+}
+\setcounter{lightload}{22}
+\setcounter{medload}{45}
+\setcounter{heavyload}{\value{lightload} + \value{medload}}
+
+\setcounter{money}{0}
+
+\newcommand{\conditionalspellmods}{
++1 to DC of mind-affecting spells vs followers of Saranrae or Rovagog
+}
+
+\setcounter{casterlevel}{9}
+
+\newcommand{\spellsknown}{
+\begin{compactenum}
+\item [5th] \spell{Aspect of the Wolf (D)}, \spell{Fire Shield}, \spell{Mage's Private Sanctum}
+\item [4th] \spell{Wall of fire (D)}, \spell{Wall of ice (D)}, \spell{detect scrying}
+\item [3rd] \spell{Fireball (D)}, \spell{Sleet Storm (D)}, \spell{nondetection}
+\item [2nd] \spell{Aspect of the Bear (D)}, \spell{Produce flame (D)}, \spell{rope trick}
+\item [1st] \spell{Burning Hands (D)}, \spell{Frostbite (D)}, \spell{illusion of calm}
+\end{compactenum}
+}
+
+\newcommand{\domains}{
+Fire, Arctic
+}
+\newcommand{\notes}{
+   Secret Caster (Ex): Disguise spellcasting with a Bluff check
+(for spells with verbal components), opposed by the observer’s Sense
+ Motive check, and/or a Sleight of Hand check (for spells with somatic components), opposed by the observer’s Perception check. \\
+\begin{tabular}{2}
+Penalty & Condition\\
+–0                & Spell has a range of personal \\
+–5                & During combat \\
+–5                & Spell has a range of touch \\
+–10               & Spell has a range longer than touch \\
+–Spell level ×2   & Spell has a visible, audible, or otherwise observable effect \\
+Automatic failure & Spell has an observable effect that clearly emanates from the caster \\ 
+\end{tabular} 
+This increases casting time to a full-round action.
+}
+\newcommand{\people}{
+}
+
+\newcommand{\scenariolist}{
+}
+
+
+\newcommand{\biography}{
+
+}
+
