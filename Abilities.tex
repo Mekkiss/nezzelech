@@ -76,10 +76,10 @@
 \newcommand{\speed}{20', 4sq (medium armour)}
 
 \setcounter{str}{7} %  -1
-\setcounter{dex}{20} % 10 +2 curse, +1 4th, +1 8th
+\setcounter{dex}{24} % 10 +2 curse, +1 4th, +1 8th
 \setcounter{con}{14} % 2
 \setcounter{int}{12} % 2
-\setcounter{wis}{15} % 5 +1
+\setcounter{wis}{17} % 5 +1
 \setcounter{cha}{14} % 2
 
 
@@ -88,9 +88,9 @@
 \setcounter{acdeflect}{1}
 \setcounter{acmaxdex}{6} %maximum dexterity modifier armour allows. Use a high number for none
 
-\setcounter{basefort}{5}
-\setcounter{baseref}{3}
-\setcounter{basewill}{6}
+\setcounter{basefort}{6}
+\setcounter{baseref}{4}
+\setcounter{basewill}{7}
 \setcounter{resistancesave}{0}
 \setcounter{bab}{7}
 \setcounter{spellresistance}{0}
@@ -98,7 +98,7 @@
 \setcounter{cmdmisc}{\value{acdeflect}}
 
 \newcommand{\feats}{
- Weapon Finesse, Dervish Dance, Piranna Strike, Toughness, Eschew Materials, 
+ Weapon Finesse, Dervish Dance, Piranna Strike, Toughness, Eschew Materials$^{\textrm{b}}$, Combat Reflexes
 }
 
 \newcommand{\traits}{
@@ -127,15 +127,15 @@ Common, Sylvan, Gnome, Celestial \\
 +1 to DC of mind-affecting spells vs followers of Saranrae or Rovagog
 }
 
-\setcounter{casterlevel}{9}
+\setcounter{casterlevel}{10}
 
 \newcommand{\spellsknown}{
 \begin{compactenum}
-\item [5th] \spell{Aspect of the Wolf (D)}, \spell{Fire Shield}, \spell{Mage's Private Sanctum}
-\item [4th] \spell{Wall of fire (D)}, \spell{Wall of ice (D)}, \spell{detect scrying}
-\item [3rd] \spell{Fireball (D)}, \spell{Sleet Storm (D)}, \spell{nondetection}
-\item [2nd] \spell{Aspect of the Bear (D)}, \spell{Produce flame (D)}, \spell{rope trick}
-\item [1st] \spell{Burning Hands (D)}, \spell{Frostbite (D)}, \spell{illusion of calm}
+\item [5th] \spell{Aspect of the Wolf$^{\textrm{D}}$}, \spell{Fire Shield$^{\textrm{D}}$}, \spell{Mage's Private Sanctum}
+\item [4th] \spell{Wall of fire$^{\textrm{D}}$}, \spell{Wall of ice$^{\textrm{D}}$}, \spell{detect scrying}
+\item [3rd] \spell{Fireball$^{\textrm{D}}$}, \spell{Sleet Storm$^{\textrm{D}}$}, \spell{nondetection}
+\item [2nd] \spell{Aspect of the Bear$^{\textrm{D}}$}, \spell{Produce flame$^{\textrm{D}}$}, \spell{rope trick}
+\item [1st] \spell{Burning Hands$^{\textrm{D}}$}, \spell{Frostbite$^{\textrm{D}}$}, \spell{illusion of calm}
 \end{compactenum}
 }
 
@@ -144,19 +144,29 @@ Fire, Arctic
 }
 \newcommand{\notes}{
    Secret Caster (Ex): Disguise spellcasting with a Bluff check
-(for spells with verbal components), opposed by the observer’s Sense
- Motive check, and/or a Sleight of Hand check (for spells with somatic components), opposed by the observer’s Perception check. \\
-\begin{tabular}{2}
+(for spells with verbal components), opposed by the observer's Sense
+ Motive check, and/or a Sleight of Hand check (for spells with somatic components), opposed by the observer's Perception check. \\
+\begin{tabular}{l l}
 Penalty & Condition\\
-–0                & Spell has a range of personal \\
-–5                & During combat \\
-–5                & Spell has a range of touch \\
-–10               & Spell has a range longer than touch \\
-–Spell level ×2   & Spell has a visible, audible, or otherwise observable effect \\
-Automatic failure & Spell has an observable effect that clearly emanates from the caster \\ 
-\end{tabular} 
-This increases casting time to a full-round action.
+-0                & Spell has a range of personal \\
+-5                & During combat \\
+-5                & Spell has a range of touch \\
+-10               & Spell has a range longer than touch \\
+-Spell level $\times 2$   & Spell has a visible, audible, or otherwise observable effect \\
+Automatic failure & Spell has an observable effect that clearly emanates from the caster \\
+\end{tabular}\\
+This increases casting time to a full-round action. \\
+\textbf{Typical spell preparation} \\
+\begin{compactenum}
+\item [5th] \spell{Fire Shield$^{\textrm{D}}$}, \spell{Holy Ice}, \spell{Empty Slot}
+\item [4th] \spell{Fireball$^{\textrm{D}}$}, \spell{Blessing of Fervor (2)}, \spell{Divine Power}, \spell{Forceful Strike?}
+\item [3rd] \spell{Fireball$^{\textrm{D}}$}, \spell{Magic Vestment}, \spell{Prayer}, \spell{Dispel Magic}, \spell{Greater Magic Weapon}
+\item [2nd] \spell{Aspect of the Bear$^{\textrm{D}}$}, \spell{Pilfering Hand}, \spell{Burst of Radiance}, \spell{Surpress Charms and Compulsions}, \spell{Inheritor's Smite}, \spell{Empty Slot}
+\item [1st] \spell{Frostbite$^{\textrm{D}}$}, \spell{Liberating Command (2)}, \spell{Bless}, \spell{Comprehend Languages}, \spell{Divine Favour}
+\item [0th] \spell{Mending}, \spell{Guidance}, \spell{Detect Poison}, \spell{Purify Food and Drink}
+\end{compactenum}
 }
+
 \newcommand{\people}{
 }
 
