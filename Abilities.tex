@@ -56,7 +56,7 @@
 
 \newcommand{\charname}{Nezzelech Reborn}
 \newcommand{\charrace}{Gnome}
-\newcommand{\charclass}{Cleric of Sarenrae 5/Dawnflower Dissident 5}
+\newcommand{\charclass}{Cleric of Sarenrae 5/Dawnflower Dissident 6}
 \newcommand{\charalignment}{NG}
 \newcommand{\charsex}{Male}
 \newcommand{\charsize}{Medium}
@@ -71,8 +71,8 @@
 \setcounter{xp}{0}
 \setcounter{ecl}{1}
 
-\setcounter{totalhp}{75}
-\setcounter{currenthp}{75}
+\setcounter{totalhp}{80}
+\setcounter{currenthp}{80}
 \newcommand{\speed}{20', 4sq (medium armour)}
 
 \setcounter{str}{7} %  -1
@@ -92,13 +92,13 @@
 \setcounter{baseref}{4}
 \setcounter{basewill}{7}
 \setcounter{resistancesave}{0}
-\setcounter{bab}{7}
+\setcounter{bab}{8}
 \setcounter{spellresistance}{0}
 
 \setcounter{cmdmisc}{\value{acdeflect}}
 
 \newcommand{\feats}{
- Weapon Finesse, Dervish Dance, Piranna Strike, Toughness, Eschew Materials$^{\textrm{b}}$, Combat Reflexes
+ Weapon Finesse, Dervish Dance, Piranna Strike, Toughness, Eschew Materials$^{\textrm{b}}$, Combat Reflexes, Improved Critical (Scimitar)
 }
 
 \newcommand{\traits}{
@@ -108,7 +108,8 @@ Warded against Witchery, Blade of Mercy\\
 Low-light vision, 1/day dancing lights, 1/day ghost sound,
 1/day prestigitiation, 1/day speak with animals \\
 1/day reroll natural 1 on 1d20 \\
-Channel energy 3d6 5/day, Good Aura (strong), 5/day Fire bolt (1d6+2), channel energy (heal or command Cold Subtype 3d6) 5/day, Secret Caster, Burning blade (swift action to spend channel to give scimitar Flaming for 3 rounds)
+Channel energy 6d6 5/day, Good Aura (strong), 5/day Fire bolt (1d6+2), channel energy (heal or command Cold Subtype 6d6) 5/day, Secret Caster, Burning blade (swift action to spend channel to give scimitar Flaming for 6 rounds). \\
+Shift blame 
 }
 
 \newcommand{\conditionalmods}{
@@ -127,10 +128,11 @@ Common, Sylvan, Gnome, Celestial \\
 +1 to DC of mind-affecting spells vs followers of Saranrae or Rovagog
 }
 
-\setcounter{casterlevel}{10}
+\setcounter{casterlevel}{11}
 
 \newcommand{\spellsknown}{
 \begin{compactenum}
+\item [6th] \spell{Fire Seeds$^{\textrm{D}}$}, \spell{Freezing Sphere$^{\textrm{D}}$}, \spell{Veil}
 \item [5th] \spell{Aspect of the Wolf$^{\textrm{D}}$}, \spell{Fire Shield$^{\textrm{D}}$}, \spell{Mage's Private Sanctum}
 \item [4th] \spell{Wall of fire$^{\textrm{D}}$}, \spell{Wall of ice$^{\textrm{D}}$}, \spell{detect scrying}
 \item [3rd] \spell{Fireball$^{\textrm{D}}$}, \spell{Sleet Storm$^{\textrm{D}}$}, \spell{nondetection}
@@ -156,8 +158,15 @@ Penalty & Condition\\
 Automatic failure & Spell has an observable effect that clearly emanates from the caster \\
 \end{tabular}\\
 This increases casting time to a full-round action. \\
+Shift Blame (Su): When a Dawnflower dissident provokes an attack of opportunity, he can attempt to deceive the creature making the attack of opportunity into believing the provoking action was performed by another creature as long as it is adjacent to the Dawnflower dissident and also
+threatened by the attacker. Doing so requires a Bluff check
+opposed by the attacker's Sense Motive check. The attacker
+gains a bonus equal to its base attack bonus on this Sense
+Motive check. If the Bluff check is successful, the attack of opportunity instead targets an adjacent creature chosen by the Dawnflower dissident, and the attacker must reroll her attack roll to see whether she hits this new target. \\
+
 \textbf{Typical spell preparation} \\
 \begin{compactenum}
+\item [6th] \spell{Fire Seeds$^{\textrm{D}}$}, \spell{Veil}
 \item [5th] \spell{Fire Shield$^{\textrm{D}}$}, \spell{Holy Ice}, \spell{Empty Slot}
 \item [4th] \spell{Fireball$^{\textrm{D}}$}, \spell{Blessing of Fervor (2)}, \spell{Divine Power}, \spell{Forceful Strike?}
 \item [3rd] \spell{Fireball$^{\textrm{D}}$}, \spell{Magic Vestment}, \spell{Prayer}, \spell{Dispel Magic}, \spell{Greater Magic Weapon}
